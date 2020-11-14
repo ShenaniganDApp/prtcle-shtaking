@@ -1,0 +1,115 @@
+{
+	"compiler": {
+		"version": "0.7.3+commit.9bfce1f6"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"components": [
+							{
+								"internalType": "address",
+								"name": "facetAddress",
+								"type": "address"
+							},
+							{
+								"internalType": "enum IDiamondCut.FacetCutAction",
+								"name": "action",
+								"type": "uint8"
+							},
+							{
+								"internalType": "bytes4[]",
+								"name": "functionSelectors",
+								"type": "bytes4[]"
+							}
+						],
+						"indexed": false,
+						"internalType": "struct IDiamondCut.FacetCut[]",
+						"name": "_diamondCut",
+						"type": "tuple[]"
+					},
+					{
+						"indexed": false,
+						"internalType": "address",
+						"name": "_init",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "bytes",
+						"name": "_calldata",
+						"type": "bytes"
+					}
+				],
+				"name": "DiamondCut",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "previousOwner",
+						"type": "address"
+					},
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "newOwner",
+						"type": "address"
+					}
+				],
+				"name": "OwnershipTransferred",
+				"type": "event"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"localhost/contracts/libraries/LibDiamond.sol": "LibDiamond"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"localhost/contracts/interfaces/IDiamondCut.sol": {
+			"keccak256": "0xc4afba429c6da2a779900b022ae6cb14d2e32299496d61d3348019b97f391373",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://4292413859e7e7353c676f210884ffea26d5528b40e22cc5d0ccd21db250f248",
+				"dweb:/ipfs/QmV5qTNH4R56k31NcUw8xZdSStjDFZkm3C1kQkBAQVrheG"
+			]
+		},
+		"localhost/contracts/libraries/LibDiamond.sol": {
+			"keccak256": "0xdc80cc36a0cd7a0f90ebd07a4ac45c5401b9fee5f4601741b02caf0131657bba",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://db82b541128e18f931a51b2032c866a929f06e275e828297cc5034f5edff937d",
+				"dweb:/ipfs/QmTXDs2Hw9gpMJHeQcCp76MC8D7VT8MNmbDVc4Z6peBkpR"
+			]
+		}
+	},
+	"version": 1
+}

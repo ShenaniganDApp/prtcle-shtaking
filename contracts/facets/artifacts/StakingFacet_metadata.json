@@ -1,0 +1,285 @@
+{
+	"compiler": {
+		"version": "0.7.3+commit.9bfce1f6"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "_operator",
+						"type": "address"
+					},
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "_from",
+						"type": "address"
+					},
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "_to",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256[]",
+						"name": "_ids",
+						"type": "uint256[]"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256[]",
+						"name": "_values",
+						"type": "uint256[]"
+					}
+				],
+				"name": "TransferBatch",
+				"type": "event"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256[]",
+						"name": "_ids",
+						"type": "uint256[]"
+					},
+					{
+						"internalType": "uint256[]",
+						"name": "_values",
+						"type": "uint256[]"
+					}
+				],
+				"name": "claimStrings",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_account",
+						"type": "address"
+					}
+				],
+				"name": "shweatPrtcles",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "shweatParticles_",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_prtcleValue",
+						"type": "uint256"
+					}
+				],
+				"name": "stakePrtcle",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_uniV2PoolTokens",
+						"type": "uint256"
+					}
+				],
+				"name": "stakeUniV2PoolTokens",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_account",
+						"type": "address"
+					}
+				],
+				"name": "staked",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "prtcle_",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "uniV2PoolTokens_",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_id",
+						"type": "uint256"
+					}
+				],
+				"name": "stringCost",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "_shweatPrtclesCost",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "withdrawPrtcleStake",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_prtcleValue",
+						"type": "uint256"
+					}
+				],
+				"name": "withdrawPrtcleStake",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "withdrawUniV2PoolStake",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_uniV2PoolTokens",
+						"type": "uint256"
+					}
+				],
+				"name": "withdrawUniV2PoolStake",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"localhost/contracts/facets/StakingFacet.sol": "StakingFacet"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"localhost/contracts/facets/StakingFacet.sol": {
+			"keccak256": "0x7cda80852606ad2206a1226dae53cf988d0c28a1de22a3b7148d618976f6681a",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://694b3b4b351aa27cd085045bf24dd7d681d5071c7c1970f31d6b2acc95aee1c8",
+				"dweb:/ipfs/QmNixXDvwz7F2HrkJqUKqHXkBC1aH8krvocn1cZamoAEC7"
+			]
+		},
+		"localhost/contracts/interfaces/IDiamondCut.sol": {
+			"keccak256": "0xc4afba429c6da2a779900b022ae6cb14d2e32299496d61d3348019b97f391373",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://4292413859e7e7353c676f210884ffea26d5528b40e22cc5d0ccd21db250f248",
+				"dweb:/ipfs/QmV5qTNH4R56k31NcUw8xZdSStjDFZkm3C1kQkBAQVrheG"
+			]
+		},
+		"localhost/contracts/interfaces/IERC1155TokenReceiver.sol": {
+			"keccak256": "0x4a29a36d4021196fd73b478e8b7e8bcaa4680bfe31c878f2ec892c1f973c7205",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://66f1958c8e5f5165317127771ccd47a3ca7eb3153ee26fd6dc7c3ed27992c04a",
+				"dweb:/ipfs/QmQcSXtWhQfeXuemsSfowBgfVSor9sKHgQUaWFHxym9B1Q"
+			]
+		},
+		"localhost/contracts/interfaces/IERC20.sol": {
+			"keccak256": "0xe5a6ee7edf7c73672be69e6abf17cd44328871c5ca42181a9e01a297db2d6a58",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://0fce1ff361afa4590e9bf61382091854867e332d28ba6493ad2c67c7a9e3b049",
+				"dweb:/ipfs/QmYHNcw1v1V7v7p57YnnZiGQKvt2HCnBcArAQiiAyhQ5jh"
+			]
+		},
+		"localhost/contracts/interfaces/IUniswapV2Pair.sol": {
+			"keccak256": "0x50bf7483fe7713fa3c246e5e24bb1450b9eeacb9a5c03d6030330dea8b00ad19",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://a8b3b01bb23704bdda368d6f662d58ece6a5d4e7b0f2a2b0e82ee11f072253c8",
+				"dweb:/ipfs/QmVrwKJiWXgrfrtpbx6rsDY4T1DcCKrWjmLz264hGkpZ17"
+			]
+		},
+		"localhost/contracts/libraries/AppStorage.sol": {
+			"keccak256": "0x7a9ab0808c48844d7a0015df621bd68a201fab41622cea1f1acbfd5612411296",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://08d8f6afbee706220b65cf94362abd66f4bf6cd26378b6444ddc17105ff9b995",
+				"dweb:/ipfs/QmTnX9uSdDfMmxXp9USkvkHwVxEmecReBiueQmBpwd52Zu"
+			]
+		},
+		"localhost/contracts/libraries/LibDiamond.sol": {
+			"keccak256": "0xdc80cc36a0cd7a0f90ebd07a4ac45c5401b9fee5f4601741b02caf0131657bba",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://db82b541128e18f931a51b2032c866a929f06e275e828297cc5034f5edff937d",
+				"dweb:/ipfs/QmTXDs2Hw9gpMJHeQcCp76MC8D7VT8MNmbDVc4Z6peBkpR"
+			]
+		},
+		"localhost/contracts/libraries/LibERC20.sol": {
+			"keccak256": "0xa54ae224d3c870d537e54886b4888e3cef0d1fe033799d93d9f702818ea032eb",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://335c9f4fa2c18af14c2a832a2bdac0e9bb0a1dfd2fc4de34387726885657be04",
+				"dweb:/ipfs/QmU7hX18tDdv4eCVM65Ld8FNzdnuqUydLJt7vhoNUyzG1J"
+			]
+		}
+	},
+	"version": 1
+}

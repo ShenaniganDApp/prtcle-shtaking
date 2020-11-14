@@ -1,0 +1,10 @@
+{
+  "name": "String - SHWEATPANTS",
+  "description": "This string is good for ONE pair of Shenanigan SHWEATPANTS",
+  "image": "ipfs://ipfs/0x8cC9fe4f67f9b2f7422D70F3eBCFc231A2e7c322",
+  "external_url": "https://she.energy/staking",
+  "attributes": [
+    {"trait_type": "Rarity", "value": "Super Rare"},
+    {"trait_type": "Price", "value": "1,000,000 Shweat PRTCLEs"}
+  ]
+}

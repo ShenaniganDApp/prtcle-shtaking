@@ -1,0 +1,77 @@
+{
+	"compiler": {
+		"version": "0.7.3+commit.9bfce1f6"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_id",
+						"type": "uint256"
+					}
+				],
+				"name": "uri",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {
+				"uri(uint256)": {
+					"details": "URIs are defined in RFC 3986. The URI MUST point to a JSON file that conforms to the \"ERC-1155 Metadata URI JSON Schema\".        ",
+					"returns": {
+						"_0": "URI string"
+					}
+				}
+			},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {
+				"uri(uint256)": {
+					"notice": "A distinct Uniform Resource Identifier (URI) for a given token."
+				}
+			},
+			"notice": "Note: The ERC-165 identifier for this interface is 0x0e89341c.",
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"localhost/contracts/interfaces/IERC1155Metadata_URI.sol": "IERC1155Metadata_URI"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"localhost/contracts/interfaces/IERC1155Metadata_URI.sol": {
+			"keccak256": "0x8d9c012104691b07af6ca1c5e2df91d888def021f317a98c4bfd2947a9b67e0b",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://ba5812b44fb00c73c592504928c5603ee1ed355d4ec250f4677cdaab3b4febfe",
+				"dweb:/ipfs/QmaoPXb7oMb8UNnMMpnJuj87ggikdE3wYUtfqvKe7vEnjH"
+			]
+		}
+	},
+	"version": 1
+}

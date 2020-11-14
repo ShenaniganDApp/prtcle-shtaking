@@ -1,0 +1,156 @@
+{
+	"compiler": {
+		"version": "0.7.3+commit.9bfce1f6"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"components": [
+							{
+								"internalType": "address",
+								"name": "facetAddress",
+								"type": "address"
+							},
+							{
+								"internalType": "enum IDiamondCut.FacetCutAction",
+								"name": "action",
+								"type": "uint8"
+							},
+							{
+								"internalType": "bytes4[]",
+								"name": "functionSelectors",
+								"type": "bytes4[]"
+							}
+						],
+						"indexed": false,
+						"internalType": "struct IDiamondCut.FacetCut[]",
+						"name": "_diamondCut",
+						"type": "tuple[]"
+					},
+					{
+						"indexed": false,
+						"internalType": "address",
+						"name": "_init",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "bytes",
+						"name": "_calldata",
+						"type": "bytes"
+					}
+				],
+				"name": "DiamondCut",
+				"type": "event"
+			},
+			{
+				"inputs": [
+					{
+						"components": [
+							{
+								"internalType": "address",
+								"name": "facetAddress",
+								"type": "address"
+							},
+							{
+								"internalType": "enum IDiamondCut.FacetCutAction",
+								"name": "action",
+								"type": "uint8"
+							},
+							{
+								"internalType": "bytes4[]",
+								"name": "functionSelectors",
+								"type": "bytes4[]"
+							}
+						],
+						"internalType": "struct IDiamondCut.FacetCut[]",
+						"name": "_diamondCut",
+						"type": "tuple[]"
+					},
+					{
+						"internalType": "address",
+						"name": "_init",
+						"type": "address"
+					},
+					{
+						"internalType": "bytes",
+						"name": "_calldata",
+						"type": "bytes"
+					}
+				],
+				"name": "diamondCut",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {
+				"diamondCut((address,uint8,bytes4[])[],address,bytes)": {
+					"params": {
+						"_calldata": "A function call, including function selector and arguments                  _calldata is executed with delegatecall on _init",
+						"_diamondCut": "Contains the facet addresses and function selectors",
+						"_init": "The address of the contract or facet to execute _calldata"
+					}
+				}
+			},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {
+				"diamondCut((address,uint8,bytes4[])[],address,bytes)": {
+					"notice": "Add/replace/remove any number of functions and optionally execute         a function with delegatecall"
+				}
+			},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"localhost/contracts/facets/DiamondCutFacet.sol": "DiamondCutFacet"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"localhost/contracts/facets/DiamondCutFacet.sol": {
+			"keccak256": "0xe5e985d6d1f8ddf3d156dc19821c19e884854e1ad0a3d6efef086de3f48afd96",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://37856a7c9305b0dd8c299795963a7e1a906521226dc51961b70058dd5d80f30c",
+				"dweb:/ipfs/QmNphAUjnTnbV7djX6fK9E9GcWqEa5uipMPMC8fkBqaeYo"
+			]
+		},
+		"localhost/contracts/interfaces/IDiamondCut.sol": {
+			"keccak256": "0xc4afba429c6da2a779900b022ae6cb14d2e32299496d61d3348019b97f391373",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://4292413859e7e7353c676f210884ffea26d5528b40e22cc5d0ccd21db250f248",
+				"dweb:/ipfs/QmV5qTNH4R56k31NcUw8xZdSStjDFZkm3C1kQkBAQVrheG"
+			]
+		},
+		"localhost/contracts/libraries/LibDiamond.sol": {
+			"keccak256": "0xdc80cc36a0cd7a0f90ebd07a4ac45c5401b9fee5f4601741b02caf0131657bba",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://db82b541128e18f931a51b2032c866a929f06e275e828297cc5034f5edff937d",
+				"dweb:/ipfs/QmTXDs2Hw9gpMJHeQcCp76MC8D7VT8MNmbDVc4Z6peBkpR"
+			]
+		}
+	},
+	"version": 1
+}

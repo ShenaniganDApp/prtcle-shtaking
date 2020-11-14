@@ -1,0 +1,53 @@
+{
+	"compiler": {
+		"version": "0.7.3+commit.9bfce1f6"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"localhost/contracts/libraries/LibERC20.sol": "LibERC20"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"localhost/contracts/interfaces/IERC20.sol": {
+			"keccak256": "0xe5a6ee7edf7c73672be69e6abf17cd44328871c5ca42181a9e01a297db2d6a58",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://0fce1ff361afa4590e9bf61382091854867e332d28ba6493ad2c67c7a9e3b049",
+				"dweb:/ipfs/QmYHNcw1v1V7v7p57YnnZiGQKvt2HCnBcArAQiiAyhQ5jh"
+			]
+		},
+		"localhost/contracts/libraries/LibERC20.sol": {
+			"keccak256": "0xa54ae224d3c870d537e54886b4888e3cef0d1fe033799d93d9f702818ea032eb",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://335c9f4fa2c18af14c2a832a2bdac0e9bb0a1dfd2fc4de34387726885657be04",
+				"dweb:/ipfs/QmU7hX18tDdv4eCVM65Ld8FNzdnuqUydLJt7vhoNUyzG1J"
+			]
+		}
+	},
+	"version": 1
+}

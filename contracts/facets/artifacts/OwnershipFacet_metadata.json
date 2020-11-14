@@ -1,0 +1,134 @@
+{
+	"compiler": {
+		"version": "0.7.3+commit.9bfce1f6"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "previousOwner",
+						"type": "address"
+					},
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "newOwner",
+						"type": "address"
+					}
+				],
+				"name": "OwnershipTransferred",
+				"type": "event"
+			},
+			{
+				"inputs": [],
+				"name": "owner",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "owner_",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_newOwner",
+						"type": "address"
+					}
+				],
+				"name": "transferOwnership",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {
+				"owner()": {
+					"returns": {
+						"owner_": "The address of the owner."
+					}
+				},
+				"transferOwnership(address)": {
+					"details": "Set _newOwner to address(0) to renounce any ownership.",
+					"params": {
+						"_newOwner": "The address of the new owner of the contract"
+					}
+				}
+			},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {
+				"owner()": {
+					"notice": "Get the address of the owner"
+				},
+				"transferOwnership(address)": {
+					"notice": "Set the address of the new owner of the contract"
+				}
+			},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"localhost/contracts/facets/OwnershipFacet.sol": "OwnershipFacet"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"localhost/contracts/facets/OwnershipFacet.sol": {
+			"keccak256": "0xe3dd111c1915d9c79186ac00a0100930b3dd9be31c4b89f93191fa750d424d9d",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://81267a5a11299260621e0877240e01d48728a72040a836829c0dca6833525396",
+				"dweb:/ipfs/QmYqSi9CqJ42rzCCc4AZDgCDeLiZCcPQ6jbcdcRmTp81So"
+			]
+		},
+		"localhost/contracts/interfaces/IDiamondCut.sol": {
+			"keccak256": "0xc4afba429c6da2a779900b022ae6cb14d2e32299496d61d3348019b97f391373",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://4292413859e7e7353c676f210884ffea26d5528b40e22cc5d0ccd21db250f248",
+				"dweb:/ipfs/QmV5qTNH4R56k31NcUw8xZdSStjDFZkm3C1kQkBAQVrheG"
+			]
+		},
+		"localhost/contracts/interfaces/IERC173.sol": {
+			"keccak256": "0x32bf9d3d5520f61d1b2330899f6c1b30ae5bb373ca3049464b8c641351a47a2e",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://11cb9c8e51648a5f4141ef26c4798f3d1a641c5fb0e6ed43ab922f1a95b5b8bc",
+				"dweb:/ipfs/Qme8y2dwDwXzsVBbHqDHhcJ9N2XfCmwQw3iMvKEouAvzTB"
+			]
+		},
+		"localhost/contracts/libraries/LibDiamond.sol": {
+			"keccak256": "0xdc80cc36a0cd7a0f90ebd07a4ac45c5401b9fee5f4601741b02caf0131657bba",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://db82b541128e18f931a51b2032c866a929f06e275e828297cc5034f5edff937d",
+				"dweb:/ipfs/QmTXDs2Hw9gpMJHeQcCp76MC8D7VT8MNmbDVc4Z6peBkpR"
+			]
+		}
+	},
+	"version": 1
+}

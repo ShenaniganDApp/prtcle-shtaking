@@ -1,0 +1,214 @@
+{
+	"compiler": {
+		"version": "0.7.3+commit.9bfce1f6"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "bytes4",
+						"name": "_functionSelector",
+						"type": "bytes4"
+					}
+				],
+				"name": "facetAddress",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "facetAddress_",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "facetAddresses",
+				"outputs": [
+					{
+						"internalType": "address[]",
+						"name": "facetAddresses_",
+						"type": "address[]"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_facet",
+						"type": "address"
+					}
+				],
+				"name": "facetFunctionSelectors",
+				"outputs": [
+					{
+						"internalType": "bytes4[]",
+						"name": "_facetFunctionSelectors",
+						"type": "bytes4[]"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "facets",
+				"outputs": [
+					{
+						"components": [
+							{
+								"internalType": "address",
+								"name": "facetAddress",
+								"type": "address"
+							},
+							{
+								"internalType": "bytes4[]",
+								"name": "functionSelectors",
+								"type": "bytes4[]"
+							}
+						],
+						"internalType": "struct IDiamondLoupe.Facet[]",
+						"name": "facets_",
+						"type": "tuple[]"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "bytes4",
+						"name": "_interfaceId",
+						"type": "bytes4"
+					}
+				],
+				"name": "supportsInterface",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {
+				"facetAddress(bytes4)": {
+					"details": "If facet is not found return address(0).",
+					"params": {
+						"_functionSelector": "The function selector."
+					},
+					"returns": {
+						"facetAddress_": "The facet address."
+					}
+				},
+				"facetAddresses()": {
+					"returns": {
+						"facetAddresses_": "facetAddresses_"
+					}
+				},
+				"facetFunctionSelectors(address)": {
+					"params": {
+						"_facet": "The facet address."
+					},
+					"returns": {
+						"_facetFunctionSelectors": "The selectors associated with a facet address."
+					}
+				},
+				"facets()": {
+					"returns": {
+						"facets_": "Facet"
+					}
+				}
+			},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {
+				"facetAddress(bytes4)": {
+					"notice": "Gets the facet that supports the given selector."
+				},
+				"facetAddresses()": {
+					"notice": "Get all the facet addresses used by a diamond."
+				},
+				"facetFunctionSelectors(address)": {
+					"notice": "Gets all the function selectors supported by a specific facet."
+				},
+				"facets()": {
+					"notice": "Gets all facets and their selectors."
+				}
+			},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"localhost/contracts/facets/DiamondLoupeFacet.sol": "DiamondLoupeFacet"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"localhost/contracts/facets/DiamondLoupeFacet.sol": {
+			"keccak256": "0x7565973fdb83136a7c7bbf411348854300a3c62bb2da873b4d3aae97c90c5b2c",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://ca136ff3df60cc366b5ac4ba6326879395076ee511a43214dbdac621733d6d71",
+				"dweb:/ipfs/QmNyWXWYu1GuLFfedWrQ6kYziUGxVPBeKjz8qc5zC97FSa"
+			]
+		},
+		"localhost/contracts/interfaces/IDiamondCut.sol": {
+			"keccak256": "0xc4afba429c6da2a779900b022ae6cb14d2e32299496d61d3348019b97f391373",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://4292413859e7e7353c676f210884ffea26d5528b40e22cc5d0ccd21db250f248",
+				"dweb:/ipfs/QmV5qTNH4R56k31NcUw8xZdSStjDFZkm3C1kQkBAQVrheG"
+			]
+		},
+		"localhost/contracts/interfaces/IDiamondLoupe.sol": {
+			"keccak256": "0xf6284895df1b84861057b2c452e065692636f033d38bce3a40168bc71f85deae",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://20a71837ef8ba268fbe2525d18f2020093f56930e8b5225d705bb42fb4185c83",
+				"dweb:/ipfs/QmbzBDmBc7VoKoXi4bFTmeBEZ6N7mVAP5BGZgL6yLU1SAP"
+			]
+		},
+		"localhost/contracts/interfaces/IERC165.sol": {
+			"keccak256": "0x901e32e419898c78b983bcfe890a994869e5b5547bf89b93ddc2835e26e8b228",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://2fdf07e3c0c59af199cce34438b22e81e285063f38a3202c285b814360744910",
+				"dweb:/ipfs/Qmao4dXkBuB3LLbHBP3drASkKKYq3JEqmTMGbEUYx6bgHW"
+			]
+		},
+		"localhost/contracts/libraries/LibDiamond.sol": {
+			"keccak256": "0xdc80cc36a0cd7a0f90ebd07a4ac45c5401b9fee5f4601741b02caf0131657bba",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://db82b541128e18f931a51b2032c866a929f06e275e828297cc5034f5edff937d",
+				"dweb:/ipfs/QmTXDs2Hw9gpMJHeQcCp76MC8D7VT8MNmbDVc4Z6peBkpR"
+			]
+		}
+	},
+	"version": 1
+}
